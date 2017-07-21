@@ -15,6 +15,10 @@
 		300A47701F221ADA00C5F322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300A476E1F221ADA00C5F322 /* LaunchScreen.storyboard */; };
 		300A477B1F221ADA00C5F322 /* giphyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A477A1F221ADA00C5F322 /* giphyTests.swift */; };
 		300A47861F221ADA00C5F322 /* giphyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A47851F221ADA00C5F322 /* giphyUITests.swift */; };
+		300A47941F22263200C5F322 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A47931F22263200C5F322 /* APIController.swift */; };
+		300A47961F2233CD00C5F322 /* GifCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A47951F2233CD00C5F322 /* GifCollectionViewCell.swift */; };
+		300A47981F22353600C5F322 /* ImageGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A47971F22353600C5F322 /* ImageGif.swift */; };
+		300A479E1F2271DA00C5F322 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A479D1F2271DA00C5F322 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		300A47811F221ADA00C5F322 /* giphyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = giphyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		300A47851F221ADA00C5F322 /* giphyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = giphyUITests.swift; sourceTree = "<group>"; };
 		300A47871F221ADA00C5F322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300A47931F22263200C5F322 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		300A47951F2233CD00C5F322 /* GifCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifCollectionViewCell.swift; sourceTree = "<group>"; };
+		300A47971F22353600C5F322 /* ImageGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGif.swift; sourceTree = "<group>"; };
+		300A479D1F2271DA00C5F322 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +107,12 @@
 		300A47611F221ADA00C5F322 /* giphy */ = {
 			isa = PBXGroup;
 			children = (
+				300A47A11F2277B400C5F322 /* Controller */,
+				300A47A01F2277B000C5F322 /* View */,
+				300A479F1F2277AC00C5F322 /* Model */,
 				300A47621F221ADA00C5F322 /* AppDelegate.swift */,
-				300A47641F221ADA00C5F322 /* ViewController.swift */,
-				300A47661F221ADA00C5F322 /* Main.storyboard */,
+				300A47951F2233CD00C5F322 /* GifCollectionViewCell.swift */,
 				300A476C1F221ADA00C5F322 /* Assets.xcassets */,
-				300A476E1F221ADA00C5F322 /* LaunchScreen.storyboard */,
 				300A47711F221ADA00C5F322 /* Info.plist */,
 				300A47691F221ADA00C5F322 /* giphy.xcdatamodeld */,
 			);
@@ -126,6 +135,33 @@
 				300A47871F221ADA00C5F322 /* Info.plist */,
 			);
 			path = giphyUITests;
+			sourceTree = "<group>";
+		};
+		300A479F1F2277AC00C5F322 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				300A47971F22353600C5F322 /* ImageGif.swift */,
+				300A479D1F2271DA00C5F322 /* DataSource.swift */,
+				300A47931F22263200C5F322 /* APIController.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		300A47A01F2277B000C5F322 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				300A47661F221ADA00C5F322 /* Main.storyboard */,
+				300A476E1F221ADA00C5F322 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		300A47A11F2277B400C5F322 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				300A47641F221ADA00C5F322 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +232,7 @@
 				TargetAttributes = {
 					300A475E1F221ADA00C5F322 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 644429XKT2;
 						ProvisioningStyle = Automatic;
 					};
 					300A47751F221ADA00C5F322 = {
@@ -262,6 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300A479E1F2271DA00C5F322 /* DataSource.swift in Sources */,
+				300A47941F22263200C5F322 /* APIController.swift in Sources */,
+				300A47961F2233CD00C5F322 /* GifCollectionViewCell.swift in Sources */,
+				300A47981F22353600C5F322 /* ImageGif.swift in Sources */,
 				300A476B1F221ADA00C5F322 /* giphy.xcdatamodeld in Sources */,
 				300A47651F221ADA00C5F322 /* ViewController.swift in Sources */,
 				300A47631F221ADA00C5F322 /* AppDelegate.swift in Sources */,
@@ -418,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 644429XKT2;
 				INFOPLIST_FILE = giphy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prueba.giphy;
@@ -430,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 644429XKT2;
 				INFOPLIST_FILE = giphy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prueba.giphy;
@@ -511,6 +554,7 @@
 				300A478C1F221ADA00C5F322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		300A478D1F221ADA00C5F322 /* Build configuration list for PBXNativeTarget "giphyTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +563,7 @@
 				300A478F1F221ADA00C5F322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		300A47901F221ADA00C5F322 /* Build configuration list for PBXNativeTarget "giphyUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +572,7 @@
 				300A47921F221ADA00C5F322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
